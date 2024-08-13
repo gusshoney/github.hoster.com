@@ -1,0 +1,21 @@
+/*banner */
+.banner{
+    background-color: #62c5cc; /* Color de fondo del banner */
+    color: white;              /* Color del texto */
+    text-align: center;        /* Centrar el texto */
+    padding: 100px;            /* Espaciado interno */
+    width: 100%;               /* Ancho completo de la pantalla */
+    position: absolute;           /* Fijar el banner en la parte superior */
+    top: 0;                    /* Alinearlo con la parte superior de la pantalla */
+    left: 0;                   /* Alinearlo con el borde izquierdo de la pantalla */
+    z-index: 1;           /* Asegúrate de que esté encima de otros elementos */
+}
+/* decorado */
+.discordLogoUp{
+    position: absolute;
+    width: 250px;
+    margin-left: 600px;
+    z-index: 1;
+    top: 70px;
+    
+}
