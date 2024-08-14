@@ -1,21 +1,54 @@
 /*banner */
 .banner{
-    background-color: #62c5cc; /* Color de fondo del banner */
+    background-color: #55bac1; /* Color de fondo del banner */
     color: white;              /* Color del texto */
     text-align: center;        /* Centrar el texto */
-    padding: 100px;            /* Espaciado interno */
-    width: 100%;               /* Ancho completo de la pantalla */
-    position: absolute;           /* Fijar el banner en la parte superior */
+    padding: 120px;            /* Espaciado interno */
+    width: 1296px;               /* Ancho completo de la pantalla */
+    position:absolute;           /* Fijar el banner en la parte superior */
     top: 0;                    /* Alinearlo con la parte superior de la pantalla */
     left: 0;                   /* Alinearlo con el borde izquierdo de la pantalla */
     z-index: 1;           /* Asegúrate de que esté encima de otros elementos */
 }
+
+.nombrePag{
+    position: absolute;
+    color: black;
+    width: 800px;
+    font-size: 80px;
+    margin-left: 450px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 2;
+    top: -55px;
+}
+
 /* decorado */
 .discordLogoUp{
     position: absolute;
     width: 250px;
-    margin-left: 600px;
+    margin-left: 580px;
     z-index: 1;
-    top: 70px;
-    
+    top: 110px;
+    font-family: style1;
+}
+
+.infoDiscPerfil{
+    position: absolute;
+    top: 250px;
+    width: 450px;
+    margin-left: 5px;
+    border-radius: 30px;
+}
+
+/* botones */
+.unirse{
+    position: absolute;
+    top: 560px;
+    width: 650px;
+    margin-left: -60px;
+    transition: transform 0.8s;
+}
+
+.unirse:hover{
+    transform: scale(1.2);
 }
