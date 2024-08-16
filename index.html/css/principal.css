@@ -58,6 +58,21 @@ body {
     margin-left: 790px;
   
 }
+
+.infoServer{
+    position: absolute;
+    z-index: 2;
+    width: 600px;
+    top: 200px;
+    margin-left: 300px;
+    opacity: 0; /* Oculta la imagen inicialmente */
+    transition: opacity 1s ease-in-out; /* Transición suave */
+}
+
+/* Clase que se añade para mostrar la imagen de información del servidor */
+.show {
+    opacity: 1; /* Muestra la imagen revelada */
+}
 /* botones */
 .unirse{
     position: absolute;
@@ -82,4 +97,23 @@ body {
 
 .botonInfo:hover{
     transform: scale(0.8);
+}
+
+.botonSalir{
+    position: absolute;
+    width: 170px;
+    z-index: 3;
+    margin-left: 750px;
+    top: 181px;
+    transition: transform 0.2s;
+    opacity: 0; /* Oculta la imagen inicialmente */
+    transition: opacity 1s ease-in-out; /* Transición suave */
+}
+
+.show2 {
+    opacity: 1; /* Muestra la imagen revelada */
+}
+
+.botonSalir:hover{
+    transform: scale(0.9);
 }
