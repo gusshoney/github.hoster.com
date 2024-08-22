@@ -2,12 +2,15 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Oculta el scroll horizontal */
+    background-color: gray;
 }
+
+
 /*banner */
 
 
 .banner{
-    background-color: #55bac1; /* Color de fondo del banner */
+    background-color: #f17f4a; /* Color de fondo del banner */
     color: white;              /* Color del texto */
     text-align: center;        /* Centrar el texto */
     padding: 120px;            /* Espaciado interno */
@@ -36,7 +39,7 @@ body {
     position: absolute;
     width: 250px;
     margin-left: 580px;
-    z-index: 1;
+    z-index: 3;
     top: 110px;
     font-family: style1;
 }
@@ -69,10 +72,63 @@ body {
     transition: opacity 1s ease-in-out; /* Transición suave */
 }
 
-/* Clase que se añade para mostrar la imagen de información del servidor */
-.show {
-    opacity: 1; /* Muestra la imagen revelada */
+.fondo{
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    margin-left: 1000px;
+    top: 250px;
 }
+
+.imgKirby{
+    position: absolute;
+    width: 250px;
+    z-index: 2;
+    margin-left: 1140px;
+    top: 360px;
+}
+
+.marquee{
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    top: 149px;
+    left: 300px;
+}
+
+
+.marquee img {
+    display: inline-block;
+    width: 100px; /* Ajusta el tamaño del GIF según sea necesario */
+    animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(1500px);
+    }
+}
+
+.marqueeFast img {
+    animation: marqueeFast 8s linear infinite; /* Aplica una animación lenta */
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    top: 115px;
+}
+
+@keyframes marqueeFast {
+    0% {
+        transform: translateX(-500px); /* Comienza la animación con el GIF completamente a la derecha */
+    }
+    100% {
+        transform: translateX(1500px); /* Termina la animación con el GIF completamente a la izquierda */
+    }
+}
+
 /* botones */
 .unirse{
     position: absolute;
@@ -83,37 +139,6 @@ body {
 }
 
 .unirse:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-.botonInfo{
-    position: absolute;
-    width: 500px;
-    margin-left: 930px;
-    top: 360px;
-    z-index: 3;
-    transition: transform 0.3s;
-}
-
-.botonInfo:hover{
-    transform: scale(0.8);
-}
-
-.botonSalir{
-    position: absolute;
-    width: 170px;
-    z-index: 3;
-    margin-left: 750px;
-    top: 181px;
-    transition: transform 0.2s;
-    opacity: 0; /* Oculta la imagen inicialmente */
-    transition: opacity 1s ease-in-out; /* Transición suave */
-}
-
-.show2 {
-    opacity: 1; /* Muestra la imagen revelada */
-}
-
-.botonSalir:hover{
-    transform: scale(0.9);
-}
